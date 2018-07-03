@@ -1,0 +1,44 @@
+.takelog-items{
+  width:95%;
+  height:130rpx;
+  margin:0px auto;
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #45485b;
+}
+.takelog-date-detail{
+  width:50%;
+}
+.takelog-date-detail .takelog-date{
+  color:#a2a8ba;
+  font-size:26rpx;
+}
+.takelog-date-detail text{
+  display:block;
+  font-size:30rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.takelog-num-detail{
+  width:50rpx;
+  height:130rpx;
+  line-height: 130rpx;
+  flex: 1;
+  text-align: right;
+}
+.takelog-num-detail text{
+  display:block;
+  height:60rpx;
+  font-size: 30rpx;
+  line-height:60rpx;
+}
+.takelog-num-detail .bottle-num{
+  font-size: 30rpx;
+}
+.takelog-num-detail .rest-text{
+  font-size:26rpx;
+}
+.rest-text{
+  color:#9ea4b6;
+}

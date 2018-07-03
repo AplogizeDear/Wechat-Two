@@ -1,0 +1,11 @@
+<view class="takelog-items" wx:for="{{alldata}}" wx:key="item">
+    <view class="takelog-date-detail">
+         <text>取出{{item.brand}}{{item.all_num}}瓶</text>
+         <text class="takelog-date">{{item.add_time}}</text>
+    </view>
+
+    <view class="takelog-num-detail">
+         <text class="bottle-num">{{item.stock}}瓶</text>
+         <text class="rest-text">剩余</text>
+    </view>
+</view>

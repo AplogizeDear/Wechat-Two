@@ -1,0 +1,14 @@
+<view class="success-box">
+    <view class="success-img">
+       <image src="../../images/icon/success-icon.png"></image>
+    </view>
+
+    <view class="success-text">
+          <text>您已成功取酒</text>
+          <text>请耐心等待服务员为您拿酒</text>
+    </view>
+
+    <view class="success-btn" bindtap="goBackIndex">
+        确定
+    </view>
+</view>

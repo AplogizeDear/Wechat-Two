@@ -1,0 +1,62 @@
+<view class="recharge-head-box">
+       <view class="recharge-left-box">
+            <text class="current-account">当前余额</text>
+            <text class="account-num">￥{{balance}}元</text>
+       </view>
+
+       <view class="consume-detail" bindtap="getConsumerDetail">
+              消费明细
+       </view>
+</view>
+
+<view class="recharge-type-box">
+      <block wx:for="{{goodflowers}}" wx:key="item">
+      <view class="recharge-item {{item.id==priceSelect ?'selected':''}}"  bindtap="chooseprice" data-select="{{item.id}}" data-pricename="{{item.price_name}}" data-desc="{{item.discount}}">
+          <text class="recharge-price">{{item.price_name}}<text class="cny-text">元</text></text>
+          <text class="recharge-desc">送{{item.discount}}元</text>
+      </view>
+      </block>
+</view>
+
+<view class="select-pay-type">
+    <view class="tip-title">
+            选择支付方式
+    </view>
+
+    <view class="wxpay">
+
+          <view class="wxpay-img">
+              <image src="../../images/icon/weixin-pay.png"></image>
+          </view>
+
+          <view class="wxpay-text">
+                微信支付
+          </view>
+
+          <view class="wxpay-no-selected">
+             
+          </view>
+    </view>
+
+    <view class="tip-title">
+            购买须知
+    </view>
+
+    <view class="pay-desc">
+        <text>1、充值金额SPACE CLUB通用</text>
+        <text>2、一旦充值成功不可退款</text>
+    </view>
+
+</view>
+
+<view class="footer-box">
+
+    <view class="total-num-box">
+          共计:￥{{gross}}
+    </view>
+
+    <view class="pay-btn-box">
+          <view class="pay-btn">立即支付</view>
+    </view>
+
+</view>

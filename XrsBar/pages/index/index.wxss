@@ -1,0 +1,262 @@
+page {
+  padding-bottom: 10rpx;
+}
+
+.user-info {
+  width: 90%;
+  height: 140rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  margin-top:80rpx;
+  margin-bottom:80rpx;
+}
+.user-info .user-avata{
+  width:140rpx;
+  height:140rpx;
+  border-radius: 50%;
+}
+.user-info .user-avatar image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  display: blcok;
+}
+.user-balance {
+  margin-left: 42rpx;
+}
+
+.user-balance .user-name {
+  margin-bottom: 10rpx;
+}
+
+.symbol {
+  font-size: 35rpx;
+}
+
+.num {
+  font-size: 48rpx;
+}
+
+.flag-text {
+  margin-left: 10rpx;
+  font-size: 32rpx;
+}
+
+.recharge-btn {
+  background: #fc4513;
+  font-size: 32rpx;
+  width: 184rpx;
+  height: 72rpx;
+  line-height: 35px;
+  border-radius: 30rpx;
+  margin-right:0;
+}
+/* 会员卡 */
+.user-card{
+  display: flex;
+  height: 360rpx;
+  width:750rpx;
+  margin-bottom:64rpx;
+  justify-content: center;
+  align-items: center;
+}
+.user-card image{
+  width:670rpx;
+  height:360rpx;
+  display: block;
+}
+/* 会员卡 */
+.accesss-btn {
+  height: 108rpx;
+  text-align: center;
+}
+
+.accesss-btn button {
+  font-size: 34rpx;
+  width: 296rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  margin-bottom:134rpx;
+}
+
+.accesss-btn .exist-btn {
+  background: #3f3af5;
+  font-weight:700;
+  margin-left: 7%;
+  float: left;
+}
+.accesss-btn .get-btn{
+  background: #fc4513;
+  margin-right: 7%;
+  float: right;
+  font-weight:700;
+}
+.schedule-box {
+  position: relative;
+  width: 90%;
+  background: #2b2f3a;
+  display: flex;
+  margin: 0px 5%;
+  border-radius: 20rpx;
+  margin-bottom: 120rpx;
+  padding-bottom:50rpx;
+}
+
+.schedule-box .img-box {
+  width: 188rpx;
+  height: 246rpx;
+  position: absolute;
+  top: -56rpx;
+  left: 28rpx;
+}
+
+.schedule-box .img-box image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.schedule-box .text-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 230rpx;
+}
+
+.schedule-box .text-box .title {
+  line-height: 60rpx;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #fff;
+  overflow:hidden;
+}
+
+.schedule-box .text-box .price {
+  margin-top: 45rpx;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+}
+
+.schedule-box .text-box .date {
+  color: #a2a8ba;
+  font-size: 24rpx;
+  padding-left: 30rpx;
+}
+
+.sidebar-layout {
+  width: 180rpx;
+  height: 100rpx;
+  background: #3e4865;
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+  margin: 100rpx;
+  position: fixed;
+  Z-index: 1;
+  bottom: 80rpx;
+  right: -100rpx;
+}
+
+.menu-btn {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #2b2f3a;
+  border-radius: 50rpx;
+  margin: 10rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+}
+
+.menu-btn image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+/*侧边滑动*/
+
+.page-top {
+  position: fixed;
+  top:0;
+  width: 530rpx;
+  background-color: #2b2f3a;
+  z-index: 3;
+  transition: All 0.4s ease;
+  -webkit-transition: All 0.4s ease;
+  margin-left: -750rpx;
+  color: #fff;
+  padding-left: 220rpx;
+  padding-top: 20rpx;
+  height:100%;
+}
+.slider-page{
+  height:100%;
+  overflow: hidden;
+}
+.c-state1 {
+  transform: rotate(0deg) scale(1) translate(75%, 0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(75%, 0%);
+}
+
+.c-state2 {
+  transform: rotate(0deg) scale(0.8) translate(75%, 0%);
+  -webkit-transform: rotate(0deg) scale(0.8) translate(75%, 0%);
+}
+
+.slider-user {
+  width: auto;
+  height: 160rpx;
+  display: flex;
+}
+
+.slider-user image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100rpx;
+}
+
+.slider-user .user-name {
+  height: 140rpx;
+  line-height: 140rpx;
+  width: 500rpx;
+  padding-left: 60rpx;
+  font-size:32rpx;
+}
+
+.slider-balance {
+  margin-top: 40rpx;
+}
+
+.menu-list {
+  width: 100%;
+  height: 600rpx;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+}
+
+.menu-list .menu-item {
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu-list .menu-item text{
+  font-size: 32rpx;
+  font-weight: 100;
+}
+.menu-item image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+
+.card-tip {
+  color: #a2a8ba;
+  display: inline-block;
+  width: 360rpx;
+  text-align: right;
+}

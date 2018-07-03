@@ -1,0 +1,39 @@
+<view class="card-box">
+    <view class="alcohol-head">
+         <image src="{{windetail.image}}"> </image>
+         <text class="card-type">{{windetail.wind_ty}}</text>
+    </view>
+
+    <view class="card-title">
+        存酒
+    </view>
+
+    <view class="alcohol-items">
+        <block wx:if="{{windetail.num!=0}}">
+            <view class="detail-box">
+                <image src="../../images/icon/half-icon.png"> </image>
+                <text class="alcohol-title">{{windetail.alcohol_title}}</text>
+                <text class="alcohol-num">x {{windetail.num}}</text>
+            </view>
+        </block>
+        <block wx:if="{{windetail.unum!=0}}">
+            <view class="detail-box">
+                <image src="../../images/icon/half_bottle.png"> </image>
+                <text class="alcohol-title">{{windetail.alcohol_title}}</text>
+                <text class="alcohol-num">{{windetail.unum}}0%</text>
+            </view>
+        </block>
+        <view class="alcohol-date"><text>有效期至 {{windetail.alcohol_date}}</text> 
+        </view>
+
+    </view>
+
+    <view class="card-title">
+        适用门店
+    </view>
+
+    <view class="card-title">
+       {{windetail.cname}} 所有门店
+    </view>
+    
+</view>

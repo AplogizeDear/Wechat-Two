@@ -1,0 +1,233 @@
+page{
+  padding-bottom:45rpx;
+}
+.card-box{
+  width:100%;
+  margin-top:90rpx;
+  padding-bottom:100rpx;
+}
+.all-con{
+  width:640rpx;
+  margin:0 35rpx;
+  padding-top:100rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  background:#2b2f3a;
+  border-radius:15rpx;
+  margin-bottom:60rpx;
+}
+.card-box .alcohol-head{
+  width:100%;
+  min-height:150rpx;
+  position: relative;
+}
+.alcohol-head image{
+  width:500rpx;
+  height:200rpx;
+  position: absolute;
+  top:-90rpx;
+  left:0rpx;
+}
+.alcohol-head .card-type{
+  width:200rpx;
+  height:45rpx;
+  line-height:45rpx;
+  font-size:35rpx;
+  color:#fff;
+  position: absolute;
+  top:50rpx;
+  left:42%;
+}
+.card-title{
+  width:100%;
+  height:40rpx;
+  line-height: 40rpx;
+  font-size:37rpx;
+  margin-bottom:50rpx;
+  margin-top:20rpx;
+}
+
+.alcohol-items{
+   width:100%;
+   min-height:160rpx;
+   position: relative;
+}
+
+.detail-box {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 32rpx;
+  color: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.detail-box image {
+  width: 25rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.alcohol-date {
+  display: flex;
+  flex-direction: row;
+  font-size: 32rpx;
+  color: #a2a8ba;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 20rpx;
+  padding-left:40rpx;
+}
+
+.right-box{
+  width:200rpx;
+  height:70rpx;
+  position: absolute;
+  top:10rpx;
+  right:10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.right-box .add-btn{
+  width: 128rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align: center;
+  background: #20232a;
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+  margin-right:5rpx;
+}
+.right-box .reduce-btn{
+  width: 128rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align: center;
+  background: #20232a;
+  border-radius: 0rpx 50rpx 50rpx 0rpx;
+  margin-left:5rpx;
+}
+.right-box .center-num{
+  width:120rpx;
+  height:60rpx;
+  line-height:60rpx;
+  background:red;
+  font-size:25rpx;
+  background:#20232a;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.selected-box{
+  width:45rpx;
+  height:45rpx;
+  position: absolute;
+  right:20rpx;
+  top:-20rpx;
+  border-radius: 50%;
+  border:1px solid #ffffff;
+}
+.selected-box-box{
+  width:46rpx;
+  height:46rpx;
+  position: absolute;
+  right:20rpx;
+  top:-20rpx;
+  border-radius: 50%;
+}
+.selected-box-box image{
+  width:46rpx;
+  height:46rpx;
+  display: block;
+  position: absolute;
+  left:0;top:0;
+  border-radius: 50%;
+}
+.footer-box {
+  width: 100%;
+  height: 170rpx;
+  line-height:170rpx;
+  background: #2b2f3a;
+  display:flex;
+  position: fixed;
+  bottom:0rpx;
+}
+.footer-box .selected-all-box{
+  width:25%;
+  height:170rpx;
+  padding-left:10rpx;
+  line-height:170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+}
+.selected-all-box .selected-all-btn{
+  width:45rpx;
+  height:45rpx;
+  border-radius: 50%;
+  border:1px solid #ffffff;
+}
+ .selected-all-btn-btn{
+  width:46rpx;
+  height:46rpx;
+  border-radius: 50%;
+  position: relative;
+}
+.selected-all-btn-btn image{
+  position: absolute;
+  left:0;
+  top:0;
+  width:46rpx;
+  height:46rpx;
+  border-radius: 50%;
+}  
+.selected-all-box .selected-all-txt{
+  width:100rpx;
+  height:45rpx;
+  line-height:45rpx;
+  text-align: center;
+  font-size:35rpx;
+  margin-left:10rpx;
+}
+.footer-box .total-num-box{
+  width:30%;
+  height:170rpx;
+  line-height:170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  font-size:35rpx;
+}
+.footer-box .get-btn-box{
+  width:46%;
+  height:170rpx;
+  line-height:170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  font-size:35rpx;
+  flex:1;
+}
+.get-btn-box .share-btn{
+  width: 150rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  text-align: center;
+  background: #20232a;
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+  background:-webkit-linear-gradient(30deg, #fd6421, #fe7b2b);
+}
+.get-btn-box .get-btn{
+  width: 150rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  text-align: center;
+  background: #20232a;
+  border-radius: 0rpx 50rpx 50rpx 0rpx;
+  background:-webkit-linear-gradient(30deg, #fd5b1d, #fc4513);
+  border-left:3rpx solid #ffffff;
+}

@@ -1,0 +1,77 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wx9777d1571721be5b",
+	"projectname": "XrsBar",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "存酒",
+					"pathName": "pages/recharge/recharge",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "gdfghgd",
+					"pathName": "pages/getwine/getwine",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "gdfghgd",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "safddsfdsasd",
+					"pathName": "pages/savewine/savewine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fsdfs",
+					"pathName": "pages/redpeople/redpeople",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fsdfs",
+					"pathName": "pages/saveewm/saveewm",
+					"query": ""
+				}
+			]
+		}
+	}
+}

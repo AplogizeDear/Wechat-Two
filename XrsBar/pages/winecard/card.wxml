@@ -1,0 +1,26 @@
+<view class="alcohol-box">
+    <block wx:for="{{wincard}}" wx:key="{{item}}">
+    <view class="alcohol-items" data-id="{{item.alcohol_id}}" bindtap="getCardDetail" >
+          <view class="left-box">
+              <image class="alcohol-img" src="../../images/icon/champagne-icon.png"> </image>
+             
+              <view class="alcohol-detail">
+                    <text class="title">{{item.alcohol_title}}</text>
+                    <text class="time">有效期:{{item.alcohol_date}}</text>
+                    <view wx:if="{{item.overtime==1}}">
+                    <text class="card-tip">有酒即将到期</text>
+                    </view>
+              </view>
+          </view>
+
+          <view class="right-box">
+              <view class="card-type">{{item.wind_ty}}</view>
+              <image class="right-circle" src="{{item.image}}"> </image>
+          </view>
+    </view>
+    </block>
+</view>
+
+<view class="take-box">
+    <button class="take-btn" bindtap="getWine" type="warn">取酒</button>
+</view>

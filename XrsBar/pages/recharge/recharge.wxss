@@ -1,0 +1,191 @@
+page{
+  padding-bottom:220rpx;
+}
+.recharge-head-box{
+  width:95%;
+  height:100rpx;
+  line-height:100rpx;
+  margin:0px auto;
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.current-account {
+  font-size: 35rpx;
+  margin-left:30rpx;
+}
+
+.account-num {
+  font-size: 60rpx;
+  margin-left:30rpx;
+}
+
+.recharge-left-box{
+  width:80%;
+  height:80rpx;
+}
+
+.consume-detail{
+  min-width:50rpx;
+  height:45rpx;
+  line-height:45px;
+  font-size:35rpx;
+  color:#ffffff;
+  display: flex;
+  flex: 1;
+  position: absolute;
+  top:-30rpx;
+  right:30rpx;
+}
+.recharge-type-box{
+  width:85%;
+  min-height:400rpx;
+  margin:0px auto;
+  padding:20rpx;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  overflow: scroll;
+}
+.recharge-item{
+  width:43%;
+  height:180rpx;
+  line-height:180rpx;
+  margin:20rpx;
+  border:3rpx solid #fc4513;
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  border-radius:20rpx;
+}
+.recharge-item text{
+  width:90%;
+  height:50rpx;
+  line-height:50rpx;
+  padding-left:30rpx;
+}
+.recharge-item .cny-text{
+  display: inline;
+  font-size:50rpx;
+  padding:0px;
+  margin-left:10rpx;
+}
+.recharge-price{
+  font-size:45rpx;
+}
+.recharge-desc{
+  font-size:32rpx;
+  margin-top:10rpx;
+}
+.selected{
+  background:#e94808;
+}
+
+.select-pay-type{
+  width:95%;
+  min-height:300rpx;
+  margin:0px auto;
+}
+.select-pay-type .tip-title{
+  width:95%;
+  height:40rpx;
+  line-height: 40rpx;
+  font-size:35rpx;
+  padding-left:30rpx;
+}
+.wxpay{
+  width:95%;
+  height:60rpx;
+  line-height:60rpx;
+  display: flex;
+  padding-left:30rpx;
+  margin-top:50rpx;
+  margin-bottom:60rpx;
+}
+.wxpay .wxpay-img{
+  width:60rpx;
+  height:60rpx;
+}
+.wxpay-img image{
+  width:100%;
+  height:100%;
+}
+.wxpay-text{
+  width:75%;
+  height:60rpx;
+  line-height:60rpx;
+  font-size:35rpx;
+  margin-left:30rpx;
+  text-align: left;
+}
+.wxpay-no-selected{
+  width:40rpx;
+  height:40rpx;
+  line-height:40rpx;
+  text-align: center;
+  border-radius: 50%;
+  background:#fc4513;
+  font-size:25rpx;
+  color:#fff;
+  margin-top:10rpx;
+}
+
+.pay-desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50rpx;
+  min-height: 100rpx;
+  margin-top:30rpx;
+}
+
+.pay-desc text {
+  color: #a2a8ba;
+  font-size: 32rpx;
+  min-height: 60rpx;
+  line-height: 60rpx;
+}
+
+.footer-box {
+  width: 100%;
+  height: 170rpx;
+  line-height:170rpx;
+  background: #2b2f3a;
+  display:flex;
+  position: fixed;
+  bottom:0rpx;
+}
+
+.footer-box .total-num-box{
+  width:50%;
+  height:170rpx;
+  line-height:170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  font-size:40rpx;
+}
+.footer-box .pay-btn-box{
+  width:46%;
+  height:170rpx;
+  line-height:170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  font-size:35rpx;
+  flex:1;
+}
+.pay-btn{
+  width:300rpx;
+  height:100rpx;
+  line-height:100rpx;
+  background:#fc4a0f;
+  color:#ffffff;
+  text-align: center;
+  font-size:35rpx;
+  border-radius: 48rpx;
+}

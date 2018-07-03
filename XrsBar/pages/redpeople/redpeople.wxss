@@ -1,0 +1,291 @@
+page{
+  padding-bottom:20rpx;
+}
+.tabs-box {
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #2b2f3a;
+  display: flex;
+  flex-direction: row;
+  color: #aeaeae;
+}
+
+.tabs-item {
+  width: 50%;
+  color: #c7c7cb;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs-item text.selected {
+  color: #fc4513;
+  border-bottom: 1rpx solid #fc4513;
+}
+
+.people-main {
+  width: 95%;
+  min-height: 500rpx;
+  margin: 0px auto;
+  display: flex;
+}
+
+.people-head {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 150rpx;
+  display: flex;
+}
+
+.avatar-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100rpx;
+}
+
+.first-main .avatar-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+
+.first-box {
+  position: relative;
+  text-align: center;
+}
+
+.second-main .crown-img {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: -60rpx;
+  left: 66rpx;
+}
+
+.first-main .crown-img {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: -80rpx;
+  left: 10rpx;
+}
+
+.third-main .crown-img {
+  width: 150rpx;
+  height: 100rpx;
+  position: absolute;
+  top: -60rpx;
+  left: 10rpx;
+}
+
+.top-people {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-main .top-people {
+  color: #fdaf01;
+  margin-top: 10rpx;
+}
+
+.first-main .top-people {
+  color: #fc4513;
+  margin-top: 30rpx;
+}
+
+.third-main .top-people {
+  color: #377cff;
+  margin-top: 10rpx;
+}
+
+.second-main .index-num {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background: #fdaf01;
+  color: #fff;
+}
+
+.first-main .index-num {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background: #fc4513;
+  color: #fff;
+}
+
+.third-main .index-num {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background: #377cff;
+  color: #fff;
+}
+
+.left-index {
+  width: 60rpx;
+}
+
+.right-name {
+  width: 130rpx;
+  font-size: 40rpx;
+  text-align: right;
+}
+
+.consumer-total {
+  text-align: center;
+}
+
+.first-main {
+  width: 30%;
+  position: relative;
+  top: -40rpx;
+  margin-left: 30rpx;
+}
+
+.third-main {
+  width: 30%;
+  margin-left: 0rpx;
+  position: relative;
+  margin-left: 30rpx;
+}
+
+.second-main {
+  width: 30%;
+  margin-left: 0rpx;
+  position: relative;
+  margin-left: 10rpx;
+}
+.fourth-box{
+  width:85%;
+  height:120rpx;
+  line-height:120rpx;
+  margin:0px auto;
+  border-radius: 80rpx;
+  background:#313849;
+  display: flex;
+  
+}
+.fourth-box .u-avatar{
+  width:100rpx;
+  height:100rpx;
+  margin:12rpx;
+  margin-left:20rpx;
+}
+.fourth-box .u-avatar image{
+  width:100%;
+  height:100%;
+  border-radius:100rpx; 
+}
+.fourth-name{
+  width:300rpx;
+  padding:10rpx;
+}
+.fourth-name text{
+  height:50rpx;
+  line-height:50rpx;
+  font-size:30rpx;
+  display:block;
+}
+.fourth-total{
+  display:block;
+  flex:1;
+  text-align:right;
+  padding-right:60rpx;
+}
+.rank-name{
+  color:#8f8f8f;
+}
+.people-items-box{
+  width:95%;
+  margin:0px auto;
+  display: flex;
+  margin-top:60rpx;
+  flex-direction: column;
+}
+.people-items{
+  width:100%;
+  height:130rpx;
+  line-height:130rpx;
+  display: flex;
+  margin-bottom:20rpx;
+}
+.people-items .u-avatar{
+  width:100rpx;
+  height:100rpx;
+  margin:12rpx;
+  margin-left:20rpx;
+  border-radius:100rpx;
+  margin-right:10rpx; 
+}
+.people-items .rank-num{
+  width:80rpx;
+  height:130rpx;
+  display:block;
+  text-align: center;
+  font-size:35rpx;
+}
+.people-items .u-name{
+  min-width:100rpx;
+  height:100rpx;
+  line-height:100rpx;
+  margin:12rpx;
+  margin-left:20rpx;
+  margin-right:10rpx; 
+}
+
+.people-items .u-total{
+  display:block;
+  flex:1;
+  text-align:right;
+  padding-right:60rpx;
+}
+.pack{
+  background:#2b2f3a;
+  height:132rpx; 
+  white-space: nowrap;
+}
+.table-num{
+  background: #20232a; 
+  height: 62rpx; 
+  display: inline-block;
+  margin-right:32rpx;
+  margin-top:34rpx;
+  text-align: center;
+  line-height:62rpx;
+  border-radius: 30rpx;
+  font-size:30rpx;
+  padding:0 40rpx;
+}
+.table-num:first-child{
+  margin-left:26rpx;
+}
+.pack .selected{
+  background:#fc4513;
+}
+.no_data_img{
+  margin-top:240rpx;
+  width:100%;
+  height:320rpx;
+  margin-bottom:30rpx;
+}
+.no_data_img image{
+  width:100%;
+  height:320rpx;
+}
+.no_data_text{
+  text-align: center;
+  font-size: 32rpx;
+}

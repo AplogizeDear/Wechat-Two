@@ -1,0 +1,49 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="user-card" bindtap="getVipCard">
+    <image src="../../images/icon/user-card.png"> </image>
+</view>
+
+<view class="vipcard-box">
+  <view class="vipcard-desc">
+
+    <view class="desc-title">
+      <image src="../../images/icon/index-icon.png"> </image>
+      <text>特别说明</text>
+    </view>
+
+    <view class="desc-content">
+          <template is="wxParse" data="{{wxParseData:explain.nodes}}"/>
+    </view>
+
+  </view>
+
+  <view class="vipcard-desc">
+
+    <view class="desc-title">
+      <image src="../../images/icon/index-icon.png"> </image>
+      <text>时效说明</text>
+    </view>
+
+    <view class="desc-content">
+     <template is="wxParse" data="{{wxParseData:explaint.nodes}}"/>
+    </view>
+
+  </view>
+
+  <view class="vipcard-desc">
+
+    <view class="desc-title">
+      <image src="../../images/icon/index-icon.png"> </image>
+      <text>使用须知</text>
+    </view>
+
+    <view class="desc-content">
+     <template is="wxParse" data="{{wxParseData:explainu.nodes}}"/>
+    </view>
+
+  </view>
+
+  <view class="vipcard-apply">
+    <button class="apply-btn"  bindtap='getwine'  type="warn">取酒</button>
+  </view>
+</view>

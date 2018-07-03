@@ -1,0 +1,18 @@
+<view class="qrcode-box">
+
+    <view class="logo-img">
+       <image src="{{logo}}"></image>
+    </view>
+
+    <view class="club-name">
+          <text>{{cname}}</text>
+    </view>
+
+    <view class="club-qrcode">
+       <image src="{{url}}"></image>
+    </view>
+
+    <view class="bottom-text" >
+        请让服务员扫描此二维码存酒
+    </view>
+</view>

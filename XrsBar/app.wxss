@@ -1,0 +1,58 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #1f2229;
+  font-family: "Microsoft Yahei";
+}
+page{
+  background:#20232a;
+  color:#fff;
+}
+
+/*会员卡封面图 start*/
+
+/*会员卡封面图 end*/
+
+/*积分规则、会员卡规则通用样式 start*/
+
+.vipcard-desc {
+  width: 90%;
+  min-height: 100rpx;
+  margin: 0px auto;
+  margin-top: 30rpx;
+}
+
+.desc-title {
+  display: flex;
+  flex-direction: row;
+  font-size: 32rpx;
+  color: #fff;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.desc-title image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+
+.desc-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50rpx;
+  min-height: 100rpx;
+}
+
+.desc-content text {
+  color: #a2a8ba;
+  font-size: 32rpx;
+  min-height: 60rpx;
+  line-height: 60rpx;
+}
+/*积分规则、会员卡规则通用样式 end*/

@@ -1,0 +1,27 @@
+<view class="points-head-box">
+
+      <view class="points-img">
+          <image src="../../images/icon/points-icon.png"> </image>
+      </view>
+
+       <view class="points-center-box">
+          <text class="points-num">{{point}}</text>
+          <text class="points-text">积分</text>
+       </view>
+
+       <view class="points-rule" bindtap="getPointsRule">
+              积分规则
+       </view>
+
+</view>
+
+<view class="points-items" wx:for="{{point_info}}" wx:key="{{item}}">
+    <view class="points-date-detail">
+         <text>{{item.content}}</text>
+         <text class="points-date">{{item.add_time}}</text>
+    </view>
+
+    <view class="points-num-detail">
+         <text>+ {{item.nums}}</text>
+    </view>
+</view>

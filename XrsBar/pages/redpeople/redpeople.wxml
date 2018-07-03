@@ -1,0 +1,228 @@
+
+<view class="tabs-box">
+
+  <block wx:for="{{['消费总额','单桌消费']}}" wx:key="item">
+    <view class="tabs-item">
+       <text class="{{currentTabsIndex==index?'selected':''}}" bindtap="onTabsItemTap" data-index="{{index}}">{{item}}</text>
+    </view>
+  </block>
+</view>
+
+<view class="people-box" hidden="{{currentTabsIndex!=0}}">
+
+<view class="people-main">
+  <view class="people-head">
+    <view class="second-main">
+      <view class="first-box">
+        <image class="avatar-img" src="{{infot[1].avatar}}"> </image>
+        <image class="crown-img" src="../../images/icon/people-second.png"> </image>
+      </view>
+
+      <view class="top-people">
+        <view class="left-index">
+          <view class="index-num">{{infot[1].ranking}}</view>
+        </view>
+
+        <view class="right-name">
+          <view class="user-name">{{infot[1].nickname}}</view>
+          <view class="consumer-total">{{infot[1].memoy}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="first-main second">
+      <view class="first-box">
+        <image class="avatar-img" src="{{infot[0].avatar}}"> </image>
+        <image class="crown-img" src="../../images/icon/people-first.png"> </image>
+      </view>
+
+      <view class="top-people">
+        <view class="left-index">
+          <view class="index-num">{{infot[0].ranking}}</view>
+        </view>
+
+        <view class="right-name">
+          <view class="user-name">{{infot[0].nickname}}</view>
+          <view class="consumer-total">{{infot[0].memoy}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="third-main">
+      <view class="first-box">
+        <image class="avatar-img" src="{{infot[2].avatar}}"> </image>
+        <image class="crown-img" src="../../images/icon/people-third.png"> </image>
+      </view>
+
+      <view class="top-people">
+
+        <view class="left-index">
+          <view class="index-num">{{infot[2].ranking}}</view>
+        </view>
+
+        <view class="right-name">
+          <view class="user-name">{{infot[2].nickname}}</view>
+          <view class="consumer-total">{{infot[2].memoy}}</view>
+        </view>
+
+      </view>
+
+    </view>
+
+  </view>
+
+</view>
+
+<view class="fourth-box">
+  <view class="u-avatar">
+    <image src="{{infos.avatar}}"> </image>
+  </view>
+
+  <view class="fourth-name">
+    <text>{{infos.nickname}}</text>
+    <text class="rank-name">第 {{infos.ranking}} 名</text>
+  </view>
+
+  <view class="fourth-total">
+    {{infos.memoy}}
+  </view>
+</view>
+
+<view class="people-items-box">
+  <block wx:for="{{info}}"  wx:key="{{item}}">
+    <view class="people-items">
+      <text class="rank-num">{{item.ranking}}</text>
+      <image class="u-avatar" src="{{item.avatar}}"> </image>
+      <text class="u-name">{{item.nickname}}</text>
+      <text class="u-total">{{item.memoy}}</text>
+    </view>
+  </block>
+</view>
+</view>
+<!--单桌消费-->
+<view class="people-box" hidden="{{currentTabsIndex!=1}}">
+<scroll-view scroll-x="true" class='pack'>
+    <block wx:for="{{menu.seat_list}}" wx:key="item">
+        <view class="table-num {{index== selected?'selected':''}}" data-index="{{index}}"  data-id="{{item.id}}"
+        catchtap="turnMenu">{{item.name}}</view>
+    </block>
+</scroll-view>
+
+
+<!-- 有数据的时候 -->
+<block wx:if="{{menu.status==1}}">
+    <view class="people-main">
+      <view class="people-head">
+    
+        <view class="second-main">
+
+          <block wx:if="{{topthree[1].ranking==2}}">
+              <view class="first-box">
+
+                <image class="avatar-img" src="{{topthree[1].avatar}}"> </image>
+                <image class="crown-img" src="../../images/icon/people-second.png"> </image>
+
+              </view>
+
+              <view class="top-people">
+
+                <view class="left-index">
+                  <view class="index-num">{{topthree[1].ranking}}</view>
+                </view>
+
+                <view class="right-name">
+                  <view class="user-name">{{topthree[1].nickname}}</view>
+                  <view class="consumer-total">{{topthree[1].memoy}}</view>
+                </view>
+
+              </view>
+          </block>
+        </view>
+     
+        <view class="first-main second">
+         <block wx:if="{{topthree[0].ranking==1}}">
+            <view class="first-box">
+              <image class="avatar-img" src="{{topthree[0].avatar}}"> </image>
+              <image class="crown-img" src="../../images/icon/people-first.png"> </image>
+            </view>
+
+            <view class="top-people">
+
+              <view class="left-index">
+                <view class="index-num">{{topthree[0].ranking}}</view>
+              </view>
+
+              <view class="right-name">
+                <view class="user-name">{{topthree[0].nickname}}</view>
+                <view class="consumer-total">{{topthree[0].memoy}}</view>
+              </view>
+
+            </view>
+          </block>
+        </view>
+
+        <view class="third-main">
+            <block wx:if="{{topthree[2].ranking==3}}">
+              <view class="first-box">
+                <image class="avatar-img" src="{{topthree[2].avatar}}"> </image>
+                <image class="crown-img" src="../../images/icon/people-third.png"> </image>
+              </view>
+
+              <view class="top-people">
+
+                <view class="left-index">
+                  <view class="index-num">{{topthree[2].ranking}}</view>
+                </view>
+
+                <view class="right-name">
+                  <view class="user-name">{{topthree[2].nickname}}</view>
+                  <view class="consumer-total">{{topthree[2].memoy}}</view>
+                </view>
+
+              </view>
+            </block>
+        </view>
+
+      </view>
+
+    </view>
+    
+    <block wx:if="{{perrank!=''}}">
+      <view class="fourth-box">
+        <view class="u-avatar">
+          <image src="{{perrank.avatar}}"> </image>
+        </view>
+
+        <view class="fourth-name">
+          <text>{{perrank.nickname}}</text>
+          <text class="rank-name">第 {{perrank.ranking}} 名</text>
+        </view>
+
+        <view class="fourth-total">
+          {{perrank.memoy}}
+        </view>
+      </view>
+    </block>
+    <view class="people-items-box">
+    <block wx:for="{{Totalrank}}" wx:key="{{item}}">
+      <view class="people-items">
+        <text class="rank-num">{{item.ranking}}</text>
+        <image class="u-avatar" src="{{item.avatar}}"> </image>
+        <text class="u-name">{{item.nickname}}</text>
+        <text class="u-total">{{item.memoy}}</text>
+      </view>
+    </block>
+    </view>
+</block>
+
+<block wx:else="{{menu.status==0}}">
+    <view class="no_data_img">
+        <image src='../../images/icon/no_data.png'></image>
+    </view>
+    <view class="no_data_text">
+       还么有数据哦
+    </view>    
+</block>
+</view>

@@ -1,0 +1,12 @@
+<view class="consumer-items" wx:for="{{recharge_info}}" wx:key="{{item}}">
+   
+    <view class="consumer-date-detail">
+         <text>{{item.content}}</text>
+         <text class="takelog-date">{{item.time}}</text>
+    </view>
+
+    <view class="consumer-num-detail">
+         <text class="increase">{{item.pay}}</text>
+         <text class="rest-text">{{item.pay_totle}}</text>
+    </view>
+</view>

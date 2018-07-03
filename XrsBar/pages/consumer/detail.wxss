@@ -1,0 +1,40 @@
+.consumer-items{
+  width:95%;
+  height:130rpx;
+  margin:0px auto;
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #45485b;
+}
+.consumer-date-detail{
+  width:50%;
+}
+.consumer-date-detail .consumer-date{
+  color:#a2a8ba;
+}
+.consumer-date-detail text{
+  display:block;
+  font-size:32rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.consumer-num-detail{
+  width:50rpx;
+  height:130rpx;
+  line-height: 130rpx;
+  flex: 1;
+  text-align: right;
+}
+.consumer-num-detail text{
+  display:block;
+  font-size:32rpx;
+  height:60rpx;
+  line-height:60rpx;
+}
+.rest-text{
+  color:#9ea4b6;
+}
+.increase{
+  color:#fc4513;
+}

@@ -1,0 +1,71 @@
+<view class="card-box">
+<block wx:for="{{allwine}}" wx:key="item"  wx:for-index="index">
+  <view class='all-con'>
+    <view class="alcohol-head" bindtap='select' data-index="{{index}}">
+      <image src="../../images/icon/champagne-upright.png"> </image>
+      <text class="card-type">{{item.wind_ty}}</text>
+          <block wx-if="{{!item.checked}}">
+              <view class="selected-box">
+              </view>
+          </block>
+          <block wx-if="{{item.checked}}">
+              <view class="selected-box-box">
+                  <image src="../../images/icon/icon_yes.png"> </image>
+              </view>
+          </block>
+    </view>
+
+    <block wx:for="{{item.wintype}}"  wx:for-item="items" wx:key='id' wx:for-index="infoindex">
+    <view class="alcohol-items"  data-alcoholid="{{items.alcohol_id}}">
+        <view class="detail-box">
+            <block wx:if="{{items.num}}">
+            <image src="../../images/icon/half-icon.png"> </image>
+            </block>
+             <block wx:else="{{items.unum}}">
+             <image src="../../images/icon/half_bottle.png"> </image>
+             </block>
+            <text class="alcohol-title">{{items.alcohol_title}}</text>
+            <text style="margin-left:20rpx;">X {{items.unum/10||items.num}}瓶</text>
+        </view>
+
+        <view class="alcohol-date">
+            <text>有效期至：{{items.alcohol_date}}</text> 
+        </view>
+
+        <view class="right-box">
+              <view class="add-btn"  bindtap="bindMinus" data-id="{{item.wine_id}}" data-index="{{index}}" data-hello="{{infoindex}}">-</view>
+               <text class="center-num">{{items.first_num}}</text>
+              <view class="reduce-btn" bindtap="bindPlus" data-id="{{item.wine_id}}" data-index="{{index}}" data-hello="{{infoindex}}">+</view>
+        </view>
+    </view>
+    </block>
+  </view>
+</block>
+</view>
+
+ <view class="footer-box">
+    <block wx:if="{{select_all}}">
+      <view class="selected-all-box" bindtap='select_none'>
+            <view class="selected-all-btn-btn">
+              <image src='../../images/icon/icon_yes.png'></image>
+            </view>
+            <view class="selected-all-txt">全选</view>
+
+      </view>
+    </block>
+    <block wx:if="{{!select_all}}">
+        <view class="selected-all-box" bindtap='select_all'>
+              <view class="selected-all-btn">
+              </view>
+              <view class="selected-all-txt">全选</view>        
+        </view>
+    </block>
+    <view class="total-num-box">
+          共计：{{const}} 瓶
+    </view>
+
+    <view class="get-btn-box">
+          <view class="share-btn">分享</view>
+          <view class="get-btn" bindtap="getWineSuccess">取出</view>
+    </view>
+</view>

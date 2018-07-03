@@ -1,0 +1,43 @@
+@import "../../wxParse/wxParse.wxss";
+.vipcard-apply {
+  width: 100%;
+  height: 170rpx;
+  line-height:170rpx;
+  background: #2b2f3a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: fixed;
+  bottom:0rpx;
+}
+
+.vipcard-apply .apply-btn {
+  width: 80%;
+  height: 100rpx;
+  line-height:100rpx;
+  border-radius: 50rpx;
+  font-size:40rpx;
+}
+.vipcard-box{
+  padding-bottom:210rpx;
+}
+.desc-content{
+  color:#a2a8ba;
+  font-size:30rpx;
+}
+/* 会员卡 */
+.user-card{
+  display: flex;
+  height: 360rpx;
+  width:750rpx;
+  margin-bottom:64rpx;
+  justify-content: center;
+  align-items: center;
+  margin-top:64rpx;
+}
+.user-card image{
+  width:670rpx;
+  height:360rpx;
+  display: block;
+}
+/* 会员卡 */

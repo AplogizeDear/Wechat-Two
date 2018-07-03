@@ -1,0 +1,40 @@
+<view class="vipcard-desc points-main-box">
+
+  <view class="desc-title">
+    <image src="../../images/icon/index-icon.png"> </image>
+    <text>如何获得积分</text>
+  </view>
+
+  <view class="desc-content">
+    <text>1、注册普通会员即可获赠1000分初始积分</text>
+    <text>2、根据每次消费金额，都可获得不定数量的积分</text>
+  </view>
+
+</view>
+
+<view class="vipcard-desc points-main-box">
+
+  <view class="desc-title">
+    <image src="../../images/icon/index-icon.png"> </image>
+    <text>积分使用规则</text>
+  </view>
+
+  <view class="desc-content">
+    <text>1、积分使用过程不找零，不兑现，不开发票，不可转移至其他账户</text>
+    <text>2、使用积分进行兑换，兑换申请一经提交，一律不能取消(除礼品缺货等特殊情况)</text>
+  </view>
+
+</view>
+
+<view class="vipcard-desc points-main-box">
+
+  <view class="desc-title">
+    <image src="../../images/icon/index-icon.png"> </image>
+    <text>积分会过期吗？</text>
+  </view>
+
+  <view class="desc-content">
+    <text>积分有效期为1年，每个月末会清除过期的积分</text>
+  </view>
+
+</view>

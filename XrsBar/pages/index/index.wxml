@@ -1,0 +1,93 @@
+<view class="page-top {{open ? 'c-state1' : ''}}">
+    <view class='slider-page' bindtouchmove="handletouchmove">
+        <view class="slider-user">
+                <view bindtap="innerpage" bindtap='bindGetUserInfo'>
+                 <image src="{{member.avatar}}"> </image>
+                </view>
+                <view class="user-name">{{member.user_name}}</view>
+        </view>
+
+        <view class="slider-balance">
+              <text class="symbol">￥</text>
+              <text class="num">{{member.money}}</text>
+              <text class="flag-text">余额</text>
+        </view>
+
+        <view class="menu-list">
+
+            <view class="menu-item" bindtap="getRecharge"> 
+                  <image src="../../images/icon/recharge.png"></image>
+                  <text>充值</text>
+            </view>
+
+            <view class="menu-item" bindtap="getPoints"> 
+                  <image src="../../images/icon/point.png"></image>
+                  <text>积分</text>
+            </view>
+
+            <view class="menu-item" bindtap="getAlcoholCard"> 
+                  <image src="../../images/icon/alcohol-card.png"></image>
+                  <text>酒卡 <text class="card-tip">有酒卡即将到期</text></text>
+            </view>
+
+            <view class="menu-item" bindtap="getRedPeople"> 
+                  <image src="../../images/icon/red-people.png"></image>
+                  <text>红人榜</text>
+            </view>
+
+            <view class="menu-item" bindtap="getTakeLog"> 
+                  <image src="../../images/icon/get-log.png"></image>
+                  <text>取酒记录</text>
+            </view>
+        </view>
+  </view>
+</view>
+<view class="all-con" bindtouchmove="handletouchmove">
+  <view class="user-info">
+          <view class="user-avatar">
+                 <image src="{{member.avatar}}"> </image> 
+          </view>
+        
+          <view class="user-balance">
+              <view class="user-name">{{member.user_name}}</view>
+              <view>
+                <text class="symbol">￥</text>
+                <text class="num">{{member.money}}</text>
+                <text class="flag-text">余额</text>
+              </view>
+          </view>
+
+        <button bindtap="getRecharge" class="recharge-btn" type="warn">充值</button>
+          
+  </view>
+
+  <view class="user-card" bindtap="getVipCard" data-id='{{card.id}}'>
+    <image src="{{card.image}}"> </image>
+  </view>
+
+  <view class="accesss-btn">
+    <button bindtap="saveWine" class="exist-btn" type="warn">存酒</button>
+    <button bindtap="getWine" class="get-btn"type="warn">取酒</button>
+  </view>
+
+  <block wx:for="{{activity}}" wx:key="{{item}}"> 
+    <view class="schedule-box">
+        <view class="img-box">
+            <image src="{{item.banner}}"></image>
+        </view>
+
+        <view class="text-box">
+              <view class="title">{{item.title}}</view>
+              <view class="date">{{item.subtitle}}</view>
+              <view class="price">￥{{item.price}}</view>
+        </view>
+    </view>
+  </block>
+  <view class="sidebar-layout" bindtap="tap_ch">
+    <view class="menu-btn">
+          <image src="../../images/icon/menu-btn.png"> </image>
+    </view>
+  </view>
+  <!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号码</button> -->
+</view>

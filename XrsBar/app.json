@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/vipcard/vipcard",
+    "pages/points/points",
+    "pages/points/points-rule",
+    "pages/takelog/takelog",
+    "pages/consumer/detail",
+    "pages/redpeople/redpeople",
+    "pages/winecard/card",
+    "pages/winecard/detail",
+    "pages/getwine/getwine",
+    "pages/recharge/recharge",
+    "pages/getwine/success",
+    "pages/savewine/savewine",
+    "pages/login/login",
+    "pages/saveewm/saveewm"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2b2f3a",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "SPACE CLUB",
+    "backgroundColor": "#20232a",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

@@ -1,0 +1,1 @@
+{"\/admin\/stock\/index_html":"","pageNumber":"1","pageSize":"10","searchText":""}

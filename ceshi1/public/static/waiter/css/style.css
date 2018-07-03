@@ -1,0 +1,302 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.first_page{
+    position: relative;
+    width:7.5rem;
+    height:13.34rem;
+    background-image:url("../images/first_img.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    float: left;
+}
+.head_img{
+    margin-top:1.28rem;
+    margin-bottom:0.4rem;
+    height:1.7rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_img img{
+    width:2.08rem;
+    height:1.7rem;
+    display: block;
+}
+.head_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0.52rem;
+    width:100%;
+    margin-bottom:1.48rem;
+}
+.head_title img{
+    width:1.48rem;
+    height:0.52rem;
+    display: block;
+}
+.head_name{
+    font-size: 0.32rem;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.32rem;
+}
+.head_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    margin-bottom:1.28rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.put_wine_btn,.get_wine_btn{
+    width:6.62rem;
+    height:1.08rem;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+}
+.put_wine_btn{
+    background:#3f3af5;
+    margin-bottom:0.8rem;
+}
+.get_wine_btn{
+    background:#fc4513;
+}
+@media only screen and (width: 375px) and (height: 812px){
+    .first_page {
+        height:16.24rem;
+        background-image:url("../images/firstx_img.png");
+    }
+}
+
+/*桌位号码详情start*/
+.tablenum{
+    width:100%;
+    font-size: 0.32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    margin-top:1.68rem;
+    margin-bottom:0.5rem;
+}
+.table_num{
+    width:100%;
+    height:1.2rem;
+    margin-bottom:1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num_input{
+    width:3.98rem;
+    height:100%;
+}
+.num_input li{
+    width:0.9rem;
+    height:100%;
+    float: left;
+    background:#fff;
+    margin-right:0.1rem;
+    border-radius: 0.2rem;
+}
+.num_input li input{
+    border:none;
+    outline: none;
+    width:100%;
+    height:100%;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color:#131315;
+}
+.num_input li:last-child{
+    margin-right:0;
+}
+.confirm_btn{
+    width:6.62rem;
+    height:1.08rem;
+    background:#fc4513;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:.32rem;
+    color:#fff;
+}
+/*桌位号码详情end*
+
+
+/*登录页面start*/
+.login_title{
+    width:100%;
+    font-size:0.56rem;
+    color:#fff;
+    margin-top:1.22rem;
+    margin-left:0.36rem;
+    margin-bottom:0.5rem;
+}
+.login_con{
+    width:100%;
+    font-size: 0.3rem;
+    margin-left:0.36rem;
+    color:#a2a8ba;
+    margin-bottom:0.84rem;
+}
+.login_input{
+    width:100%;
+    height:1.02rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.4rem;
+}
+.login_name{
+    width:6.98rem;
+    height:1.08rem;
+    background:#2b2f3a;
+    border-radius: 0.5rem;
+}
+.login_intro{
+    width:1.68rem;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.3rem;
+    color:#fff;
+    float: left;
+}
+.login_num{
+    width:5.2rem;
+    height:100%;
+    float: left;
+}
+.login_num input{
+    width:100%;
+    height:100%;
+    border:none;
+    outline: none;
+    font-size: 0.36rem;
+    background:none;
+    color:#a2a8ba;
+}
+input::-webkit-input-placeholder{
+    color:#a2a8ba;;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#a2a8ba;;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#a2a8ba;;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#a2a8ba;;
+}
+.select{
+    background: -webkit-linear-gradient(30deg, #fd7a2a, #fc4513);
+    box-shadow: 0 7px 18px rgba(252,69,18,0.3);
+}
+/*登录页面end*/
+
+/*取酒清单start*/
+.getwine_page{
+    width:100%;
+    height:3.84rem;
+    margin-top:0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.8rem;
+}
+.getwine_con{
+    width:7.1rem;
+    height:100%;
+    background:#2b2f3a;
+    border-radius: 0.3rem;
+    position: relative;
+}
+.win_img{
+    position: absolute;
+    height:1.9rem;
+    width:90%;
+    left:0.36rem;
+    top:-0.38rem;
+}
+.win_img img{
+    height:100%;
+}
+.win_title{
+    position: absolute;
+    bottom:0;
+    left:1.2rem;
+    color:#fff;
+}
+.win_type{
+    padding-left:0.42rem;
+    padding-right:0.42rem;
+}
+.win_xing{
+    margin-top:2rem;
+    height:0.5rem;
+    margin-bottom:0.4rem;
+    line-height:0.6rem;
+    font-size: .28rem;
+}
+.win_xing img{
+    height:100%;
+    float: left;
+}
+.footer_btn{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:1.88rem;
+    background:#2b2f3a;
+    line-height: 1.88rem;
+}
+.confi_btn{
+    width:3.8rem;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+.btn_confi{
+    width:3.18rem;
+    height:0.88rem;
+    border-radius: 0.8rem;
+    background: -webkit-linear-gradient(30deg, #fd7a2a, #fc4513);
+    box-shadow: 0 7px 18px rgba(252,69,18,0.3);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all_wine{
+    float: right;
+    color:#ffff;
+    font-size:0.34rem;
+}
+
+/*取酒清单end*/
+

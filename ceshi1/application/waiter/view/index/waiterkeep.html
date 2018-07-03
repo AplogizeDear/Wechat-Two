@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>桌号</title>
+    {include file="public/header" /}
+</head>
+<style>
+    html,body{
+        background:#1f2229;
+    }
+</style>
+<body>
+    <div class="tablenum">
+        请在这里输入对应的桌位号
+    </div>
+    <div class="table_num">
+        <ul class="num_input">
+            <li>
+                <input type="text" maxlength="1" name="a">
+            </li>
+            <li>
+                <input type="text" maxlength="1" name="b">
+            </li>
+            <li>
+                <input type="text" maxlength="1" name="c">
+            </li>
+            <li>
+                <input type="text" maxlength="1" name="d">
+            </li>
+        </ul>
+    </div>
+    <div class="button">
+        <div class="confirm_btn">
+            确定
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('input').eq(0).focus();
+        $("input[type=text]").each(function(){
+            $(this).bind('input propertychange',function(){
+                if($(this).val().length >0){
+                    console.log($(this).next('input').focus());
+                }
+            })
+        });
+    });
+    $(".confirm_btn").click(function(){
+        alert(1);
+    })
+</script>
+</html>
